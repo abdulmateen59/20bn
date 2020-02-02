@@ -17,20 +17,20 @@ def main():
 
     print(workout_history.str_to_datetime(str_today))
 
-    print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
+    print('\n' + '*' * 100 + '\n')
     workouts = [workout_1_day_ago, workout_2_days_ago, workout_3_days_ago]
     print(workout_history.get_completed_workouts(workouts))
 
-    print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
+    print('\n' + '*' * 100 + '\n')
     print(workout_history.days_in_a_row([workout_2_days_ago] , today_date))
     print(workout_history.days_in_a_row([workout_1_day_ago, workout_2_days_ago] , today_date))
-    print(workout_history.days_in_a_row([workout_today, workout_1_day_ago, workout_2_days_ago] , today_date)) 
+    print(workout_history.days_in_a_row([workout_today, workout_1_day_ago, workout_2_days_ago] , today_date))
 
-    print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
+    print('\n' + '*' * 100 + '\n')
     workouts = [workout_today, workout_1_day_ago, workout_2_days_ago]
     print(workout_history.by_workout(workouts))
 
-    print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
+    print('\n' + '*' * 100 + '\n')
     workouts = [workout_today, workout_1_day_ago, workout_2_days_ago, workout_3_days_ago]
     print(workout_history.aggregate_workout_history(workouts,today_date))
 

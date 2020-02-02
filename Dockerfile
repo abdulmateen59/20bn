@@ -5,6 +5,6 @@ WORKDIR /home/WORKSPACE
 
 
 
-# $ docker build -t twentybn . && docker run -it --rm twentybn /bin/bash 
+# $ docker build -t twentybn . && docker run -it --rm twentybn /bin/bash
 # $ python3 main.py
-# $ pytest fitness/test_workout_history.py 
+# $ pytest fitness/test_workout_history.py
